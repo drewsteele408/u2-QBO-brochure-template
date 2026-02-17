@@ -9,13 +9,13 @@
 
 .sectionLight {
   padding: 4rem 1rem;
-  background-color: #1f2937;
+  background-color: #f9fafb;
 }
 
 .sectionCTA {
   padding: 4rem 1rem;
-  background: linear-gradient(to right, #111827, #1f2937);
-  color: #ffffff;
+  background-color: #f9fafb;
+  color: #111827;
   border-top: 3px solid #22c55e;
 }
 
@@ -58,7 +58,7 @@
 .detailedTitle {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -114,12 +114,12 @@
 .detailsContent h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 1rem;
 }
 
 .detailsContent p {
-  color: #d1d5db;
+  color: #4b5563;
   margin-bottom: 1rem;
 }
 
@@ -127,7 +127,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: #d1d5db;
+  color: #4b5563;
 }
 
 .detailsListItem {
@@ -181,13 +181,13 @@
 .ctaTitle {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 1.5rem;
 }
 
 .ctaSubtitle {
   font-size: 1.125rem;
-  color: #9ca3af;
+  color: #6b7280;
   margin-bottom: 2rem;
 }
 

@@ -1,6 +1,6 @@
 .heroContainer {
   position: relative;
-  background: linear-gradient(to right, #f9fafb, #f3f4f6, #f9fafb);
+  background-color: #f9fafb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.2) 100%);
 }
 
 /* Background animation elements */
@@ -87,6 +87,7 @@
   font-size: 2.25rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  color: #000000;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   line-height: 1.2;
 }

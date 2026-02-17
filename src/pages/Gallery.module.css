@@ -9,7 +9,7 @@
 
 .sectionLight {
   padding: 4rem 1rem;
-  background-color: #1f2937;
+  background-color: #f9fafb;
 }
 
 .maxWidth {
@@ -182,12 +182,12 @@
 .ctaTitle {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 1.5rem;
 }
 
 .ctaSubtitle {
-  color: #9ca3af;
+  color: #6b7280;
   font-size: 1.125rem;
   margin-bottom: 2rem;
 }

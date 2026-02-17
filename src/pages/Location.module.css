@@ -4,7 +4,7 @@
 
 .section {
   padding: 4rem 1rem;
-  background-color: #111827;
+  background-color: #f9fafb;
 }
 
 .maxWidth {
@@ -19,17 +19,21 @@
 .mapTitle {
   font-size: 1.875rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.attractionsSection .mapTitle {
+  color: #111827;
 }
 
 .mapContainer {
   width: 100%;
   height: 24rem;
-  background-color: #1f2937;
+  background-color: #f0f0f0;
   border-radius: 0.5rem;
-  border: 1px solid #374151;
+  border: 1px solid #e5e7eb;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -42,30 +46,30 @@
 }
 
 .mapPlaceholderText {
-  color: #9ca3af;
+  color: #4b5563;
   font-size: 1.125rem;
 }
 
 .mapPlaceholderSubtext {
-  color: #9ca3af;
+  color: #4b5563;
 }
 
 .infoBox {
-  background-color: #1f2937;
+  background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  border: 1px solid #374151;
+  border: 1px solid #e5e7eb;
 }
 
 .infoBoxTitle {
   font-weight: 600;
   font-size: 1.125rem;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 0.75rem;
 }
 
 .infoBoxText {
-  color: #d1d5db;
+  color: #4b5563;
   margin-bottom: 1rem;
 }
 
@@ -80,6 +84,10 @@
 
 .attractionsSection {
   margin-bottom: 4rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 3rem 1rem;
+  background-color: #f9fafb;
 }
 
 .attractionGrid {
@@ -100,17 +108,17 @@
 }
 
 .officeHoursBox {
-  background-color: #1f2937;
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 0.5rem;
-  border: 1px solid #374151;
+  border: 1px solid #e5e7eb;
   margin-bottom: 4rem;
 }
 
 .officeHoursTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -133,17 +141,17 @@
 
 .officeHoursColumn h3 {
   font-weight: 600;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 0.75rem;
 }
 
 .officeHoursColumn p {
-  color: #d1d5db;
+  color: #4b5563;
 }
 
 .officeHoursNote {
   font-size: 0.875rem;
-  color: #9ca3af;
+  color: #6b7280;
   margin-top: 0.75rem;
 }
 
@@ -154,7 +162,7 @@
 .transportationTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -176,21 +184,21 @@
 }
 
 .neighborhoodBox {
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  background: #ffffff;
   padding: 2rem;
   border-radius: 0.5rem;
-  border: 1px solid #374151;
+  border: 1px solid #e5e7eb;
 }
 
 .neighborhoodTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 1rem;
 }
 
 .neighborhoodDescription {
-  color: #d1d5db;
+  color: #4b5563;
   margin-bottom: 1rem;
 }
 
@@ -198,7 +206,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  color: #d1d5db;
+  color: #4b5563;
 }
 
 .neighborhoodFeatureItem {

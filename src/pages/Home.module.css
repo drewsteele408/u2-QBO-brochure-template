@@ -22,8 +22,8 @@
 
 .sectionCTA {
   padding: 5rem 1rem;
-  background: linear-gradient(to right, #111827, #1f2937, #111827);
-  color: #ffffff;
+  background-color: #f9fafb;
+  color: #111827;
   border-top: 2px solid rgba(34, 197, 94, 0.2);
   border-bottom: 2px solid rgba(34, 197, 94, 0.2);
 }
@@ -53,11 +53,11 @@
 }
 
 .ctaSection .sectionTitle {
-  color: #ffffff;
+  color: #111827;
 }
 
 .ctaSection .sectionSubtitle {
-  color: #f3f4f6;
+  color: #6b7280;
 }
 
 .ctaButtons {

@@ -4,7 +4,7 @@
 
 .section {
   padding: 4rem 1rem;
-  background-color: #111827;
+  background-color: #f9fafb;
 }
 
 .sectionLight {
@@ -31,7 +31,7 @@
 .infoSection h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 2rem;
 }
 
@@ -44,7 +44,7 @@
 .infoItem h3 {
   font-weight: 600;
   font-size: 1.125rem;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 0.5rem;
 }
 
@@ -60,12 +60,12 @@
 
 .subtext {
   font-size: 0.875rem;
-  color: #9ca3af;
+  color: #6b7280;
   margin-top: 0.5rem;
 }
 
 .contactText {
-  color: #d1d5db;
+  color: #4b5563;
 }
 
 .socialLinks {
@@ -105,7 +105,7 @@
 .formSection h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   margin-bottom: 2rem;
 }
 
@@ -132,7 +132,7 @@
 .label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #d1d5db;
+  color: #4b5563;
   margin-bottom: 0.5rem;
 }
 
@@ -141,12 +141,12 @@
 .textarea {
   width: 100%;
   padding: 0.75rem 1rem;
-  border: 1px solid #374151;
+  border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   font-size: 1rem;
   font-family: inherit;
-  background-color: #1f2937;
-  color: #f3f4f6;
+  background-color: #ffffff;
+  color: #111827;
 }
 
 .input:focus,
