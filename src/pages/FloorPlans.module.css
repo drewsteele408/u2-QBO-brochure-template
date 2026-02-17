@@ -1,0 +1,173 @@
+.container {
+  background-color: #111827;
+}
+
+.section {
+  padding: 4rem 1rem;
+  background-color: #111827;
+}
+
+.sectionLight {
+  padding: 4rem 1rem;
+  background-color: #1f2937;
+}
+
+.maxWidth {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.maxWidthLarge {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-bottom: 3rem;
+}
+
+.introText {
+  color: #d1d5db;
+  font-size: 1.125rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardHeader {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+}
+
+.cardDetails {
+  font-size: 0.875rem;
+}
+
+.cardLabel {
+  font-weight: 600;
+}
+
+.cardSqft {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.cardPrice {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.cardAvailability {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.cardDescription {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  font-style: italic;
+}
+
+.cardButton {
+  width: 100%;
+}
+
+.infoSection {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.infoTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.infoGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .infoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.infoColumn h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #d1d5db;
+}
+
+.checkmark {
+  color: #22c55e;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ctaSection {
+  padding: 4rem 1rem;
+}
+
+.ctaContainer {
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.ctaSubtitle {
+  color: #9ca3af;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}

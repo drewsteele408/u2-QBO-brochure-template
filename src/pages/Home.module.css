@@ -1,0 +1,202 @@
+.container {
+  background-color: #111827;
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.section {
+  padding: 5rem 1rem;
+  background-color: #f9fafb;
+}
+
+.sectionLight {
+  padding: 5rem 1rem;
+  background-color: #f3f4f6;
+}
+
+.sectionCTA {
+  padding: 5rem 1rem;
+  background: linear-gradient(to right, #111827, #1f2937, #111827);
+  color: #ffffff;
+  border-top: 2px solid rgba(34, 197, 94, 0.2);
+  border-bottom: 2px solid rgba(34, 197, 94, 0.2);
+}
+
+.maxWidth {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.sectionSubtitle {
+  color: #6b7280;
+  font-size: 1.125rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.ctaSection .sectionTitle {
+  color: #ffffff;
+}
+
+.ctaSection .sectionSubtitle {
+  color: #f3f4f6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* About Section */
+.aboutGrid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .aboutGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.aboutContent h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.aboutContent p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+.aboutContent p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.aboutImage {
+  height: 24rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #dbeafe 0%, #e0e7ff 100%);
+  box-shadow: 0 20px 25px -5px rgba(34, 197, 94, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: 2px solid #22c55e;
+}
+
+/* Featured Plans Grid */
+.plansGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .plansGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Content */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.planHeader {
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+}
+
+.planDetails {
+  font-size: 0.875rem;
+}
+
+.planDetails .label {
+  font-weight: 600;
+  color: #111827;
+}
+
+.planSquareFeet {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.planPrice {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.planAvailability {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.planDescription {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-style: italic;
+}
+
+.planButton {
+  width: 100%;
+}
+
+.amenitiesGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .amenitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .amenitiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.amenityIcon {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.viewMoreButtons {
+  text-align: center;
+}

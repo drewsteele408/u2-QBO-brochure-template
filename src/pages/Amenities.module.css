@@ -1,0 +1,212 @@
+.container {
+  background-color: #111827;
+}
+
+.section {
+  padding: 4rem 1rem;
+  background-color: #111827;
+}
+
+.sectionLight {
+  padding: 4rem 1rem;
+  background-color: #1f2937;
+}
+
+.sectionCTA {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #111827, #1f2937);
+  color: #ffffff;
+  border-top: 3px solid #22c55e;
+}
+
+.maxWidth {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.intro {
+  margin-bottom: 3rem;
+}
+
+.introText {
+  color: #9ca3af;
+  font-size: 1.125rem;
+}
+
+.amenitiesGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .amenitiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .amenitiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.amenityIcon {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.detailedTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.detailsRow {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .detailsRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.detailsRowReverse {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .detailsRowReverse {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .detailsRowReverse .detailsImage {
+    order: 2;
+  }
+  
+  .detailsRowReverse .detailsContent {
+    order: 1;
+  }
+}
+
+.detailsImage {
+  background-color: #1f2937;
+  height: 16rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+}
+
+.detailsContent h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.detailsContent p {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #d1d5db;
+}
+
+.detailsListItem {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.petSection {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.petTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.petDescription {
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+}
+
+.petBox {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+}
+
+.petBoxTitle {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.petList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #d1d5db;
+}
+
+.ctaContainer {
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.125rem;
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Specific background colors for images */
+.imageBlue {
+  background-color: #1f2937;
+}
+
+.imagePurple {
+  background-color: #1f2937;
+}
+
+.imageOrange {
+  background-color: #1f2937;
+}

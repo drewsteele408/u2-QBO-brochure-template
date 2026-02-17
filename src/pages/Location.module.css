@@ -1,0 +1,234 @@
+.container {
+  background-color: #111827;
+}
+
+.section {
+  padding: 4rem 1rem;
+  background-color: #111827;
+}
+
+.maxWidth {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.mapSection {
+  margin-bottom: 4rem;
+}
+
+.mapTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 24rem;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mapPlaceholder {
+  text-align: center;
+}
+
+.mapPlaceholderText {
+  color: #9ca3af;
+  font-size: 1.125rem;
+}
+
+.mapPlaceholderSubtext {
+  color: #9ca3af;
+}
+
+.infoBox {
+  background-color: #1f2937;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+}
+
+.infoBoxTitle {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.infoBoxText {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.infoLink {
+  color: #22c55e;
+  text-decoration: none;
+}
+
+.infoLink:hover {
+  text-decoration: underline;
+}
+
+.attractionsSection {
+  margin-bottom: 4rem;
+}
+
+.attractionGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .attractionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .attractionGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.officeHoursBox {
+  background-color: #1f2937;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+  margin-bottom: 4rem;
+}
+
+.officeHoursTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.officeHoursContent {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.officeHoursGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .officeHoursGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.officeHoursColumn h3 {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.officeHoursColumn p {
+  color: #d1d5db;
+}
+
+.officeHoursNote {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  margin-top: 0.75rem;
+}
+
+.transportationSection {
+  margin-bottom: 4rem;
+}
+
+.transportationTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.transportationGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .transportationGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.transportationIcon {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.neighborhoodBox {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #374151;
+}
+
+.neighborhoodTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.neighborhoodDescription {
+  color: #d1d5db;
+  margin-bottom: 1rem;
+}
+
+.neighborhoodFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #d1d5db;
+}
+
+.neighborhoodFeatureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkmark {
+  color: #22c55e;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ctaSection {
+  padding: 4rem 1rem;
+  text-align: center;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.ctaSubtitle {
+  color: #9ca3af;
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}

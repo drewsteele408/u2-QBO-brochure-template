@@ -1,0 +1,168 @@
+import type { PropertyConfig, FloorPlan, Amenity, GalleryImage } from '../types/index';
+
+export const propertyConfig: PropertyConfig = {
+  name: 'Mesa Falls Apartments',
+  tagline: 'Modern Living in the Heart of the Valley',
+  description: 'Experience luxury apartment living at Mesa Falls Apartments. Our community offers contemporary floor plans, premium amenities, and exceptional service.',
+  address: '123 Mesa Ridge Drive, Phoenix, AZ 85001',
+  phone: '(602) 555-0123',
+  email: 'info@mesafallsapts.com',
+  officeHours: 'Mon-Fri: 9AM-6PM, Sat-Sun: 10AM-5PM',
+  applicantPortalURL: 'https://u2-portal.example.com',
+  colors: {
+    primary: '#1e40af',
+    secondary: '#7c3aed',
+    accent: '#f97316',
+  },
+  images: {
+    hero: '/images/hero-main.jpg',
+  },
+  socialMedia: {
+    facebook: 'https://facebook.com/mesafallsapts',
+    instagram: 'https://instagram.com/mesafallsapts',
+    twitter: 'https://twitter.com/mesafallsapts',
+  },
+};
+
+export const floorPlans: FloorPlan[] = [
+  {
+    id: '1bed-1bath',
+    name: 'Studio',
+    bedrooms: 0,
+    bathrooms: 1,
+    squareFeet: 450,
+    price: '$1,299/mo',
+    availability: 3,
+    image: '/images/floor-plans/studio.jpg',
+    description: 'Cozy studio perfect for professionals and students.',
+  },
+  {
+    id: '1bed-1bath-std',
+    name: '1 Bedroom / 1 Bathroom',
+    bedrooms: 1,
+    bathrooms: 1,
+    squareFeet: 650,
+    price: '$1,599/mo',
+    availability: 5,
+    image: '/images/floor-plans/1b1b.jpg',
+    description: 'Spacious one-bedroom with open living area.',
+  },
+  {
+    id: '2bed-2bath',
+    name: '2 Bedroom / 2 Bathroom',
+    bedrooms: 2,
+    bathrooms: 2,
+    squareFeet: 950,
+    price: '$2,199/mo',
+    availability: 2,
+    image: '/images/floor-plans/2b2b.jpg',
+    description: 'Perfect for families or roommates with separate areas.',
+  },
+  {
+    id: '3bed-2bath',
+    name: '3 Bedroom / 2 Bathroom',
+    bedrooms: 3,
+    bathrooms: 2,
+    squareFeet: 1250,
+    price: '$3,099/mo',
+    availability: 1,
+    image: '/images/floor-plans/3b2b.jpg',
+    description: 'Luxury three-bedroom with premium finishes.',
+  },
+];
+
+export const amenities: Amenity[] = [
+  {
+    id: 'pool',
+    name: 'Resort-Style Pool',
+    description: 'Sparkling heated swimming pool with sundeck and cabanas.',
+    icon: '🏊',
+  },
+  {
+    id: 'fitness',
+    name: 'State-of-the-Art Gym',
+    description: 'Fully equipped fitness center with cardio and weight training.',
+    icon: '💪',
+  },
+  {
+    id: 'parking',
+    name: 'Covered Parking',
+    description: 'Included underground covered parking for all residents.',
+    icon: '🅿️',
+  },
+  {
+    id: 'lounge',
+    name: 'Community Lounge',
+    description: 'Spacious social area perfect for gatherings and events.',
+    icon: '🛋️',
+  },
+  {
+    id: 'coworking',
+    name: 'Co-Working Spaces',
+    description: 'Professional spaces with high-speed internet for remote workers.',
+    icon: '💻',
+  },
+  {
+    id: 'pet-friendly',
+    name: 'Pet-Friendly Community',
+    description: 'We welcome furry friends with our pet policy.',
+    icon: '🐾',
+  },
+  {
+    id: 'laundry',
+    name: 'In-Unit Washers/Dryers',
+    description: 'Convenient laundry facilities in every unit.',
+    icon: '🧺',
+  },
+  {
+    id: 'security',
+    name: '24/7 Security',
+    description: 'Professional security team providing round-the-clock monitoring.',
+    icon: '🔒',
+  },
+];
+
+export const galleryImages: GalleryImage[] = [
+  {
+    id: 'hero-1',
+    title: 'Modern Living Room',
+    description: 'Contemporary apartment interior with premium finishes',
+    image: '/images/gallery/living-room.jpg',
+    category: 'interior',
+  },
+  {
+    id: 'hero-2',
+    title: 'Fully Equipped Kitchen',
+    description: 'State-of-the-art appliances and modern cabinetry',
+    image: '/images/gallery/kitchen.jpg',
+    category: 'interior',
+  },
+  {
+    id: 'hero-3',
+    title: 'Resort-Style Pool',
+    description: 'Relax and unwind at our beautiful community pool',
+    image: '/images/gallery/pool.jpg',
+    category: 'amenity',
+  },
+  {
+    id: 'hero-4',
+    title: 'Community Courtyard',
+    description: 'Beautifully landscaped outdoor spaces',
+    image: '/images/gallery/courtyard.jpg',
+    category: 'exterior',
+  },
+  {
+    id: 'hero-5',
+    title: 'Fitness Center',
+    description: 'Fully equipped gym facilities',
+    image: '/images/gallery/gym.jpg',
+    category: 'amenity',
+  },
+  {
+    id: 'hero-6',
+    title: 'Building Exterior',
+    description: 'Modern architecture and stunning landscaping',
+    image: '/images/gallery/exterior.jpg',
+    category: 'exterior',
+  },
+];
