@@ -13,15 +13,15 @@ export default function Footer() {
             <p className={styles.tagline}>{propertyConfig.tagline}</p>
             <div className={styles.contactList}>
               <p className={styles.contactItem}>
-                <span className={styles.icon}>📍</span>
+                <span className={styles.icon}></span>
                 {propertyConfig.address}
               </p>
               <p className={styles.contactItem}>
-                <span className={styles.icon}>📞</span>
+                <span className={styles.icon}></span>
                 <a href={`tel:${propertyConfig.phone}`}>{propertyConfig.phone}</a>
               </p>
               <p className={styles.contactItem}>
-                <span className={styles.icon}>✉️</span>
+                <span className={styles.icon}></span>
                 <a href={`mailto:${propertyConfig.email}`}>{propertyConfig.email}</a>
               </p>
             </div>
@@ -116,7 +116,7 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p className={styles.copyright}>&copy; 2026 {propertyConfig.name}. All rights reserved.</p>
           <p className={styles.powered}>
-            <span style={{ color: '#f97316' }}>✨</span> Powered by U2 Applicant Portal
+            <span style={{ color: '#f97316' }}></span> Powered by U2 Applicant Portal
           </p>
         </div>
       </div>

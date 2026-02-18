@@ -51,7 +51,7 @@ export default function Contact() {
               <div className={styles.infoBlock}>
                 {/* Phone */}
                 <div className={styles.infoItem}>
-                  <h3>📞 Phone</h3>
+                  <h3>Phone</h3>
                   <a
                     href={`tel:${propertyConfig.phone}`}
                     className={styles.infoLink}
@@ -63,7 +63,7 @@ export default function Contact() {
 
                 {/* Email */}
                 <div className={styles.infoItem}>
-                  <h3>✉️ Email</h3>
+                  <h3>Email</h3>
                   <a
                     href={`mailto:${propertyConfig.email}`}
                     className={styles.infoLink}
@@ -75,14 +75,14 @@ export default function Contact() {
 
                 {/* Office Hours */}
                 <div className={styles.infoItem}>
-                  <h3>⏰ Office Hours</h3>
+                  <h3> Office Hours</h3>
                   <p className={styles.contactText}>{propertyConfig.officeHours}</p>
                   <p className={styles.subtext}>Visit us in person anytime during these hours</p>
                 </div>
 
                 {/* Address */}
                 <div className={styles.infoItem}>
-                  <h3>📍 Address</h3>
+                  <h3>Address</h3>
                   <p className={styles.contactText}>{propertyConfig.address}</p>
                 </div>
 

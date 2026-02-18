@@ -116,13 +116,13 @@ export default function Location() {
             <h2 className={styles.transportationTitle}>Getting Around</h2>
             <div className={styles.transportationGrid}>
               <Card title="Public Transit" description="Easy access to bus routes and Phoenix light rail system">
-                <p className={styles.transportationIcon}>🚌</p>
+                <p className={styles.transportationIcon}></p>
               </Card>
               <Card title="Walkability" description="Close to shops, restaurants, and parks">
-                <p className={styles.transportationIcon}>🚶</p>
+                <p className={styles.transportationIcon}></p>
               </Card>
               <Card title="Parking" description="Covered parking included in every unit">
-                <p className={styles.transportationIcon}>🚗</p>
+                <p className={styles.transportationIcon}></p>
               </Card>
             </div>
           </div>

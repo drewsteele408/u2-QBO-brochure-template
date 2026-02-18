@@ -36,7 +36,7 @@ export default function Amenities() {
             {/* Recreation */}
             <div className={styles.detailsRow}>
               <div className={styles.detailsContent}>
-                <h3>🏊 Recreation & Wellness</h3>
+                <h3>Recreation & Wellness</h3>
                 <p>
                   Unwind and stay active with our resort-style swimming pool, state-of-the-art fitness center, and yoga studio. Everything you need to maintain your healthy lifestyle.
                 </p>
@@ -58,7 +58,7 @@ export default function Amenities() {
                 <p>Community Image</p>
               </div>
               <div className={styles.detailsContent}>
-                <h3>🛋️ Community Spaces</h3>
+                <h3>Community Spaces</h3>
                 <p>
                   Connect with neighbors and enjoy life together in our thoughtfully designed community spaces. Perfect for events, gatherings, and making new friends.
                 </p>
@@ -74,7 +74,7 @@ export default function Amenities() {
             {/* Convenience */}
             <div className={styles.detailsRow}>
               <div className={styles.detailsContent}>
-                <h3>💼 Convenience & Services</h3>
+                <h3>Convenience & Services</h3>
                 <p>
                   We make modern living convenient with professional services and amenities designed for busy lifestyles.
                 </p>
@@ -97,7 +97,7 @@ export default function Amenities() {
       {/* Pet Policy */}
       <section className={styles.section}>
         <div className={styles.petSection}>
-          <h2 className={styles.petTitle}>🐾 Pet-Friendly Community</h2>
+          <h2 className={styles.petTitle}>Pet-Friendly Community</h2>
           <p className={styles.petDescription}>
             We understand that your pets are part of your family. Mesa Falls Apartments welcomes your furry friends with our pet-friendly policy.
           </p>
