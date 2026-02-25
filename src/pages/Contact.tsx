@@ -1,10 +1,14 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import CTAButton from '../components/CTAButton';
-import { propertyConfig } from '../config/propertyData';
+import { usePropertyConfig } from '../context/PropertyContext';
 import styles from './Contact.module.css';
 
 export default function Contact() {
+  const { propertyId } = useParams<{ propertyId: string }>();
+  const propertyConfig = usePropertyConfig();
+  const basePath = propertyId ? `/${propertyId}` : '/';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,7 +43,7 @@ export default function Contact() {
 
   return (
     <div className={styles.container}>
-      <HeroSection title="Contact Us" subtitle="Get in touch with the Mesa Falls team" height="md" />
+      <HeroSection title="Contact Us" subtitle={`Get in touch with the ${propertyConfig.name} team`} height="md" />
 
       <section className={styles.section}>
         <div className={styles.maxWidth}>
@@ -227,13 +231,13 @@ export default function Contact() {
       <section className={styles.quickLinksSection}>
         <h2 className={styles.quickLinksTitle}>Quick Links</h2>
         <div className={styles.quickLinksGrid}>
-          <CTAButton href="/floor-plans" variant="outline" className={styles.quickLink}>
+          <CTAButton href={`${basePath}/floor-plans`} variant="outline" className={styles.quickLink}>
             View Floor Plans
           </CTAButton>
-          <CTAButton href="/amenities" variant="outline" className={styles.quickLink}>
+          <CTAButton href={`${basePath}/amenities`} variant="outline" className={styles.quickLink}>
             Explore Amenities
           </CTAButton>
-          <CTAButton href="/gallery" variant="outline" className={styles.quickLink}>
+          <CTAButton href={`${basePath}/gallery`} variant="outline" className={styles.quickLink}>
             Browse Gallery
           </CTAButton>
           <CTAButton href={propertyConfig.applicantPortalURL} variant="primary" className={styles.quickLink}>

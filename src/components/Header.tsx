@@ -1,24 +1,37 @@
-import { Link, useLocation } from 'react-router-dom';
-import { propertyConfig } from '../config/propertyData';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import { usePropertyConfig } from '../context/PropertyContext';
 import styles from './Header.module.css';
 
 export default function Header() {
   const location = useLocation();
+  const { propertyId } = useParams<{ propertyId: string }>();
+  const propertyConfig = usePropertyConfig();
 
-  const isActive = (path: string) => location.pathname === path;
+  // Parse property name to separate main name and suffix
+  const nameParts = propertyConfig.name.split(' ');
+  const suffix = nameParts[nameParts.length - 1];
+  const mainName = nameParts.slice(0, -1).join(' ');
+
+  // Build base path for navigation
+  const basePath = propertyId ? `/${propertyId}` : '/';
+
+  const isActive = (path: string) => {
+    const fullPath = propertyId ? `/${propertyId}${path}` : path;
+    return location.pathname === fullPath;
+  };
 
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link to="/" className={styles.logo}>
-          <div className={styles.logoText}>Mesa Falls</div>
-          <div className={styles.logoSubtext}>Apartments</div>
+          <div className={styles.logoText}>{mainName}</div>
+          <div className={styles.logoSubtext}>{suffix}</div>
         </Link>
 
         <ul className={styles.menu}>
           <li>
             <Link
-              to="/"
+              to={basePath}
               className={`${styles.menuItem} ${isActive('/') ? styles.active : ''}`}
             >
               Home
@@ -26,7 +39,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/floor-plans"
+              to={`${basePath}/floor-plans`}
               className={`${styles.menuItem} ${isActive('/floor-plans') ? styles.active : ''}`}
             >
               Floor Plans
@@ -34,7 +47,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/amenities"
+              to={`${basePath}/amenities`}
               className={`${styles.menuItem} ${isActive('/amenities') ? styles.active : ''}`}
             >
               Amenities
@@ -42,7 +55,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/gallery"
+              to={`${basePath}/gallery`}
               className={`${styles.menuItem} ${isActive('/gallery') ? styles.active : ''}`}
             >
               Gallery
@@ -50,7 +63,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/location"
+              to={`${basePath}/location`}
               className={`${styles.menuItem} ${isActive('/location') ? styles.active : ''}`}
             >
               Location
@@ -58,7 +71,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/contact"
+              to={`${basePath}/contact`}
               className={`${styles.menuItem} ${isActive('/contact') ? styles.active : ''}`}
             >
               Contact

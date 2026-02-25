@@ -1,10 +1,15 @@
+import { useParams } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import Card from '../components/Card';
 import CTAButton from '../components/CTAButton';
-import { amenities, propertyConfig } from '../config/propertyData';
+import { useAmenities, usePropertyConfig } from '../context/PropertyContext';
 import styles from './Amenities.module.css';
 
 export default function Amenities() {
+  const { propertyId } = useParams<{ propertyId: string }>();
+  const amenities = useAmenities();
+  const propertyConfig = usePropertyConfig();
+  const basePath = propertyId ? `/${propertyId}` : '/';
   return (
     <div className={styles.container}>
       <HeroSection title="Premium Amenities" subtitle="Experience luxury living" height="md" />
@@ -123,7 +128,7 @@ export default function Amenities() {
             <CTAButton href={propertyConfig.applicantPortalURL} variant="primary" size="lg">
               Apply Now
             </CTAButton>
-            <CTAButton href="/contact" variant="secondary" size="lg">
+            <CTAButton href={`${basePath}/contact`} variant="secondary" size="lg">
               Schedule Tour
             </CTAButton>
           </div>

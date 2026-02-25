@@ -1,12 +1,17 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import CTAButton from '../components/CTAButton';
-import { galleryImages, propertyConfig } from '../config/propertyData';
+import { useGalleryImages, usePropertyConfig } from '../context/PropertyContext';
 import styles from './Gallery.module.css';
 
 export default function Gallery() {
+  const { propertyId } = useParams<{ propertyId: string }>();
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [activeFilter, setActiveFilter] = useState<string>('all');
+  const galleryImages = useGalleryImages();
+  const propertyConfig = usePropertyConfig();
+  const basePath = propertyId ? `/${propertyId}` : '/';
 
   const filteredImages =
     activeFilter === 'all' ? galleryImages : galleryImages.filter((img) => img.category === activeFilter);
@@ -114,10 +119,10 @@ export default function Gallery() {
         <div className={styles.ctaSection}>
           <h2 className={styles.ctaTitle}>Want More? Schedule a Personal Tour</h2>
           <p className={styles.ctaSubtitle}>
-            Experience Mesa Falls Apartments in person. Our leasing team is ready to show you around and answer any questions.
+            Experience {propertyConfig.name} in person. Our leasing team is ready to show you around and answer any questions.
           </p>
           <div className={styles.ctaButtons}>
-            <CTAButton href="/contact" variant="primary" size="lg">
+            <CTAButton href={`${basePath}/contact`} variant="primary" size="lg">
               Schedule Tour
             </CTAButton>
             <CTAButton href={propertyConfig.applicantPortalURL} variant="outline" size="lg">

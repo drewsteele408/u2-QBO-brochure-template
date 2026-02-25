@@ -1,0 +1,135 @@
+{
+  "propertyConfig": {
+    "name": "Eden Apartments",
+    "tagline": "Serene Urban Living",
+    "description": "Discover tranquility in the heart of the city at Eden Apartments. Our community features lush landscapes, sophisticated architecture, and all the amenities you need for comfortable living.",
+    "address": "555 Mikan Dr, Rexburg, ID 83440",
+    "phone": "(208) 278-2100",
+    "email": "hello@edenaptments.com",
+    "officeHours": "Mon-Fri: 8:30AM-5:30PM, Sat-Sun: 11AM-4PM",
+    "applicantPortalURL": "https://u2-portal.example.com/eden",
+    "colors": {
+      "primary": "#059669",
+      "secondary": "#10b981",
+      "accent": "#34d399"
+    },
+    "images": {
+      "hero": "/images/hero-main.jpg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/edenapartments",
+      "instagram": "https://instagram.com/edenapartments",
+      "twitter": "https://twitter.com/edenapartments"
+    }
+  },
+  "floorPlans": [
+    {
+      "id": "studio-eden",
+      "name": "Studio",
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "squareFeet": 500,
+      "price": "$1,450/mo",
+      "availability": 2,
+      "image": "/images/floor-plans/studio.jpg",
+      "description": "Compact and efficient studio with modern finishes."
+    },
+    {
+      "id": "1bed-eden",
+      "name": "1 Bedroom / 1 Bathroom",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "squareFeet": 700,
+      "price": "$1,750/mo",
+      "availability": 4,
+      "image": "/images/floor-plans/1b1b.jpg",
+      "description": "Bright one-bedroom with floor-to-ceiling windows."
+    },
+    {
+      "id": "2bed-eden",
+      "name": "2 Bedroom / 2 Bathroom",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "squareFeet": 1050,
+      "price": "$2,400/mo",
+      "availability": 3,
+      "image": "/images/floor-plans/2b2b.jpg",
+      "description": "Spacious two-bedroom with separate living areas."
+    }
+  ],
+  "amenities": [
+    {
+      "id": "rooftop-garden",
+      "name": "Rooftop Garden",
+      "description": "Serene rooftop garden with city views and seating areas.",
+      "icon": ""
+    },
+    {
+      "id": "yoga-studio",
+      "name": "Yoga & Wellness Studio",
+      "description": "Dedicated space for yoga, meditation, and wellness classes.",
+      "icon": ""
+    },
+    {
+      "id": "co-working",
+      "name": "Co-Working Lounge",
+      "description": "Modern co-working space with high-speed internet and private booths.",
+      "icon": ""
+    },
+    {
+      "id": "pet-park",
+      "name": "Pet Park",
+      "description": "Fully equipped pet park for dogs and cats.",
+      "icon": ""
+    },
+    {
+      "id": "bike-storage",
+      "name": "Bike Storage & Repair",
+      "description": "Secure bike storage with repair station for convenient commuting.",
+      "icon": ""
+    },
+    {
+      "id": "lounge",
+      "name": "Community Lounge",
+      "description": "Modern social space for events and gatherings.",
+      "icon": ""
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": "eden-1",
+      "title": "Rooftop Garden",
+      "description": "Peaceful rooftop garden with city views",
+      "image": "/images/gallery/rooftop.jpg",
+      "category": "exterior"
+    },
+    {
+      "id": "eden-2",
+      "title": "Modern Bedroom",
+      "description": "Spacious bedroom with natural lighting",
+      "image": "/images/gallery/bedroom.jpg",
+      "category": "interior"
+    },
+    {
+      "id": "eden-3",
+      "title": "Contemporary Kitchen",
+      "description": "Sleek kitchen with premium appliances",
+      "image": "/images/gallery/kitchen.jpg",
+      "category": "interior"
+    },
+    {
+      "id": "eden-4",
+      "title": "Yoga Studio",
+      "description": "Tranquil wellness space for yoga and meditation",
+      "image": "/images/gallery/yoga-studio.jpg",
+      "category": "amenity"
+    },
+    {
+      "id": "eden-5",
+      "title": "Community Lounge",
+      "description": "Social gathering space with modern design",
+      "image": "/images/gallery/lounge.jpg",
+      "category": "amenity"
+    }
+  ]
+}

@@ -1,8 +1,13 @@
-import { Link } from 'react-router-dom';
-import { propertyConfig } from '../config/propertyData';
+import { Link, useParams } from 'react-router-dom';
+import { usePropertyConfig } from '../context/PropertyContext';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+  const { propertyId } = useParams<{ propertyId: string }>();
+  const propertyConfig = usePropertyConfig();
+
+  // Build base path for navigation
+  const basePath = propertyId ? `/${propertyId}` : '/';
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -32,22 +37,22 @@ export default function Footer() {
             <h4 className={styles.subheading}>Navigation</h4>
             <ul className={styles.linkList}>
               <li>
-                <Link to="/floor-plans" className={styles.link}>
+                <Link to={`${basePath}/floor-plans`} className={styles.link}>
                   <span className={styles.arrow}>→</span> Floor Plans
                 </Link>
               </li>
               <li>
-                <Link to="/amenities" className={styles.link}>
+                <Link to={`${basePath}/amenities`} className={styles.link}>
                   <span className={styles.arrow}>→</span> Amenities
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className={styles.link}>
+                <Link to={`${basePath}/gallery`} className={styles.link}>
                   <span className={styles.arrow}>→</span> Gallery
                 </Link>
               </li>
               <li>
-                <Link to="/location" className={styles.link}>
+                <Link to={`${basePath}/location`} className={styles.link}>
                   <span className={styles.arrow}>→</span> Location
                 </Link>
               </li>

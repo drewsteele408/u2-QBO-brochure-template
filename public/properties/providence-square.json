@@ -1,0 +1,135 @@
+{
+  "propertyConfig": {
+    "name": "Providence Square",
+    "tagline": "Luxury Living Redefined",
+    "description": "Experience elegance and sophistication at Providence Square. Our premium apartments feature high-end finishes, exceptional services, and an unparalleled lifestyle in a historic neighborhood.",
+    "address": "430 W 2nd S, Rexburg, ID 83440",
+    "phone": "(208) 227-8072",
+    "email": "concierge@providencesquare.com",
+    "officeHours": "Mon-Fri: 9AM-7PM, Sat-Sun: 10AM-6PM",
+    "applicantPortalURL": "https://u2-portal.example.com/providence",
+    "colors": {
+      "primary": "#6b21a8",
+      "secondary": "#a855f7",
+      "accent": "#ec4899"
+    },
+    "images": {
+      "hero": "/images/hero-main.jpg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/providencesquare",
+      "instagram": "https://instagram.com/providencesquare",
+      "twitter": "https://twitter.com/providencesquare"
+    }
+  },
+  "floorPlans": [
+    {
+      "id": "1bed-prov",
+      "name": "1 Bedroom / 1.5 Bathroom",
+      "bedrooms": 1,
+      "bathrooms": 1.5,
+      "squareFeet": 800,
+      "price": "$2,200/mo",
+      "availability": 2,
+      "image": "/images/floor-plans/1b1b.jpg",
+      "description": "Elegant one-bedroom with marble finishes."
+    },
+    {
+      "id": "2bed-prov",
+      "name": "2 Bedroom / 2 Bathroom",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "squareFeet": 1200,
+      "price": "$3,200/mo",
+      "availability": 3,
+      "image": "/images/floor-plans/2b2b.jpg",
+      "description": "Luxurious two-bedroom with premium finishes and views."
+    },
+    {
+      "id": "3bed-prov",
+      "name": "3 Bedroom / 2.5 Bathroom",
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "squareFeet": 1600,
+      "price": "$4,500/mo",
+      "availability": 1,
+      "image": "/images/floor-plans/3b2b.jpg",
+      "description": "Penthouse-style three-bedroom with exceptional design."
+    }
+  ],
+  "amenities": [
+    {
+      "id": "concierge",
+      "name": "24/7 Concierge Service",
+      "description": "Full-service concierge for all your needs and requests.",
+      "icon": ""
+    },
+    {
+      "id": "spa",
+      "name": "Luxury Spa & Wellness",
+      "description": "Full-service spa with massage, sauna, and steam rooms.",
+      "icon": ""
+    },
+    {
+      "id": "fine-dining",
+      "name": "Fine Dining Lounge",
+      "description": "Upscale lounge and catering space for private events.",
+      "icon": ""
+    },
+    {
+      "id": "theater",
+      "name": "Private Theater",
+      "description": "State-of-the-art private theater for entertainment.",
+      "icon": ""
+    },
+    {
+      "id": "wine-cellar",
+      "name": "Wine Cellar Collection",
+      "description": "Climate-controlled wine storage available.",
+      "icon": ""
+    },
+    {
+      "id": "valet",
+      "name": "Valet Parking",
+      "description": "Professional valet parking and car services.",
+      "icon": ""
+    }
+  ],
+  "galleryImages": [
+    {
+      "id": "prov-1",
+      "title": "Luxury Living Room",
+      "description": "Elegantly designed living space with premium furnishings",
+      "image": "/images/gallery/luxury-living.jpg",
+      "category": "interior"
+    },
+    {
+      "id": "prov-2",
+      "title": "Gourmet Kitchen",
+      "description": "High-end kitchen with custom cabinetry and appliances",
+      "image": "/images/gallery/gourmet-kitchen.jpg",
+      "category": "interior"
+    },
+    {
+      "id": "prov-3",
+      "title": "Spa & Wellness",
+      "description": "Luxurious spa facilities with relaxation areas",
+      "image": "/images/gallery/spa.jpg",
+      "category": "amenity"
+    },
+    {
+      "id": "prov-4",
+      "title": "Fine Dining Lounge",
+      "description": "Sophisticated dining and entertainment space",
+      "image": "/images/gallery/dining.jpg",
+      "category": "amenity"
+    },
+    {
+      "id": "prov-5",
+      "title": "Building Facade",
+      "description": "Historic architecture with modern luxury",
+      "image": "/images/gallery/exterior.jpg",
+      "category": "exterior"
+    }
+  ]
+}

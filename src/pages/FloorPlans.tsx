@@ -1,10 +1,15 @@
+import { useParams } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import Card from '../components/Card';
 import CTAButton from '../components/CTAButton';
-import { floorPlans, propertyConfig } from '../config/propertyData';
+import { useFloorPlans, usePropertyConfig } from '../context/PropertyContext';
 import styles from './FloorPlans.module.css';
 
 export default function FloorPlans() {
+  const { propertyId } = useParams<{ propertyId: string }>();
+  const floorPlans = useFloorPlans();
+  const propertyConfig = usePropertyConfig();
+  const basePath = propertyId ? `/${propertyId}` : '/';
   return (
     <div className={styles.container}>
       <HeroSection title="Floor Plans" subtitle="Find your perfect fit" height="md" />
@@ -118,7 +123,7 @@ export default function FloorPlans() {
             <CTAButton href={propertyConfig.applicantPortalURL} variant="primary" size="lg">
               Apply Now
             </CTAButton>
-            <CTAButton href="/contact" variant="outline" size="lg">
+            <CTAButton href={`${basePath}/contact`} variant="outline" size="lg">
               Contact Us
             </CTAButton>
           </div>

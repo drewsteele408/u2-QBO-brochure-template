@@ -1,10 +1,14 @@
+import { useParams } from 'react-router-dom';
 import HeroSection from '../components/HeroSection';
 import Card from '../components/Card';
 import CTAButton from '../components/CTAButton';
-import { propertyConfig } from '../config/propertyData';
+import { usePropertyConfig } from '../context/PropertyContext';
 import styles from './Location.module.css';
 
 export default function Location() {
+  const { propertyId } = useParams<{ propertyId: string }>();
+  const propertyConfig = usePropertyConfig();
+  const basePath = propertyId ? `/${propertyId}` : '/';
   const nearbyAttractions = [
     {
       id: '1',
@@ -162,9 +166,9 @@ export default function Location() {
       <section className={styles.ctaSection}>
         <h2 className={styles.ctaTitle}>Plan Your Visit Today</h2>
         <p className={styles.ctaSubtitle}>
-          Visit us in person and discover why Mesa Falls is the perfect place to call home!
+          Visit us in person and discover why {propertyConfig.name} is the perfect place to call home!
         </p>
-        <CTAButton href="/contact" variant="primary" size="lg">
+        <CTAButton href={`${basePath}/contact`} variant="primary" size="lg">
           Schedule a Tour
         </CTAButton>
       </section>
