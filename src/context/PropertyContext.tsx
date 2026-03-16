@@ -19,8 +19,8 @@ export interface PropertyProviderProps {
 /**
  * PropertyProvider wraps the app and provides property data to all components
  */
-export function PropertyProvider({ children, defaultProperty = 'mesa-falls' }: PropertyProviderProps) {
-  const [propertyId, setPropertyId] = useState<PropertyId | null>(defaultProperty);
+export function PropertyProvider({ children, defaultProperty }: PropertyProviderProps) {
+  const [propertyId, setPropertyId] = useState<PropertyId | null>(defaultProperty ?? null);
   const [propertyData, setPropertyData] = useState<PropertyData | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -42,7 +42,7 @@ export function PropertyProvider({ children, defaultProperty = 'mesa-falls' }: P
     }
   }, []);
 
-  // Load default property on mount
+  // Optionally load a default property when one is explicitly provided
   useEffect(() => {
     if (defaultProperty && !propertyData) {
       loadProperty(defaultProperty);

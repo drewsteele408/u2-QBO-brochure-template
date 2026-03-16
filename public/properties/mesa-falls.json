@@ -14,7 +14,12 @@
       "accent": "#f97316"
     },
     "images": {
-      "hero": "/images/hero-main.jpg"
+      "hero": "/images/mesa-falls/hero.webp",
+      "amenityDetailImages": {
+        "recreation": "/images/mesa-falls/hot-tub.webp",
+        "community": "/images/mesa-falls/courtyard.webp",
+        "services": "/images/mesa-falls/kitchen.webp"
+      }
     },
     "socialMedia": {
       "facebook": "https://facebook.com/mesafallsapts",
@@ -25,25 +30,25 @@
   "floorPlans": [
     {
       "id": "1bed-1bath",
-      "name": "Studio",
-      "bedrooms": 0,
+      "name": "1 Bedroom / 1 Bathroom",
+      "bedrooms": 1,
       "bathrooms": 1,
       "squareFeet": 450,
       "price": "$1,299/mo",
       "availability": 3,
-      "image": "/images/floor-plans/studio.jpg",
-      "description": "Cozy studio perfect for professionals and students."
+      "image": "/images/mesa-falls/1-bedroom-1-bath.webp",
+      "description": "Cozy 1 bed / 1 bath perfect for professionals and students."
     },
     {
       "id": "1bed-1bath-std",
-      "name": "1 Bedroom / 1 Bathroom",
-      "bedrooms": 1,
+      "name": "2 Bedroom / 1 Bathroom",
+      "bedrooms": 2,
       "bathrooms": 1,
       "squareFeet": 650,
       "price": "$1,599/mo",
       "availability": 5,
-      "image": "/images/floor-plans/1b1b.jpg",
-      "description": "Spacious one-bedroom with open living area."
+      "image": "/images/mesa-falls/2-bedroom-2-bath.webp",
+      "description": "Spacious two-bedroom with open living area."
     },
     {
       "id": "2bed-2bath",
@@ -53,7 +58,7 @@
       "squareFeet": 950,
       "price": "$2,199/mo",
       "availability": 2,
-      "image": "/images/floor-plans/2b2b.jpg",
+      "image": "/images/mesa-falls/3-bedroom-3-bath.webp",
       "description": "Perfect for families or roommates with separate areas."
     },
     {
@@ -64,7 +69,7 @@
       "squareFeet": 1250,
       "price": "$3,099/mo",
       "availability": 1,
-      "image": "/images/floor-plans/3b2b.jpg",
+      "image": "/images/mesa-falls/3-bedroom-2-bath.webp",
       "description": "Luxury three-bedroom with premium finishes."
     }
   ],
@@ -123,42 +128,42 @@
       "id": "hero-1",
       "title": "Modern Living Room",
       "description": "Contemporary apartment interior with premium finishes",
-      "image": "/images/gallery/living-room.jpg",
+      "image": "/images/mesa-falls/3-bedroom-2-bath.webp",
       "category": "interior"
     },
     {
       "id": "hero-2",
       "title": "Fully Equipped Kitchen",
       "description": "State-of-the-art appliances and modern cabinetry",
-      "image": "/images/gallery/kitchen.jpg",
+      "image": "/images/mesa-falls/kitchen.webp",
       "category": "interior"
     },
     {
       "id": "hero-3",
-      "title": "Resort-Style Pool",
-      "description": "Relax and unwind at our beautiful community pool",
-      "image": "/images/gallery/pool.jpg",
+      "title": "Resort-Style Hot Tub",
+      "description": "Relax and unwind at our beautiful community hot tub",
+      "image": "/images/mesa-falls/hot-tub.webp",
       "category": "amenity"
     },
     {
       "id": "hero-4",
       "title": "Community Courtyard",
       "description": "Beautifully landscaped outdoor spaces",
-      "image": "/images/gallery/courtyard.jpg",
+      "image": "/images/mesa-falls/courtyard.webp",
       "category": "exterior"
     },
     {
       "id": "hero-5",
       "title": "Fitness Center",
       "description": "Fully equipped gym facilities",
-      "image": "/images/gallery/gym.jpg",
+      "image": "/images/mesa-falls/fitness-center.webp",
       "category": "amenity"
     },
     {
       "id": "hero-6",
       "title": "Building Exterior",
       "description": "Modern architecture and stunning landscaping",
-      "image": "/images/gallery/exterior.jpg",
+      "image": "/images/mesa-falls/hero.webp",
       "category": "exterior"
     }
   ]

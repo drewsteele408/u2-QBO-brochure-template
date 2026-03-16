@@ -43,6 +43,11 @@ export interface PropertyConfig {
   };
   images: {
     hero: string;
+    amenityDetailImages?: {
+      recreation?: string;
+      community?: string;
+      services?: string;
+    };
   };
   socialMedia?: {
     facebook?: string;

@@ -14,7 +14,12 @@
       "accent": "#34d399"
     },
     "images": {
-      "hero": "/images/hero-main.jpg"
+      "hero": "/images/eden/hero.webp",
+      "amenityDetailImages": {
+        "recreation": "/images/eden/fitness-center.webp",
+        "community": "/images/eden/clubhouse.webp",
+        "services": "/images/eden/gameroom.webp"
+      }
     },
     "socialMedia": {
       "facebook": "https://facebook.com/edenapartments",
@@ -25,24 +30,24 @@
   "floorPlans": [
     {
       "id": "studio-eden",
-      "name": "Studio",
-      "bedrooms": 0,
+      "name": "1 Bedroom 1 Bathroom",
+      "bedrooms": 1,
       "bathrooms": 1,
       "squareFeet": 500,
-      "price": "$1,450/mo",
+      "price": "$1,115/mo",
       "availability": 2,
-      "image": "/images/floor-plans/studio.jpg",
+      "image": "/images/eden/1-bed-1-bath.webp",
       "description": "Compact and efficient studio with modern finishes."
     },
     {
       "id": "1bed-eden",
-      "name": "1 Bedroom / 1 Bathroom",
-      "bedrooms": 1,
+      "name": "2 Bedroom / 1 Bathroom",
+      "bedrooms": 2,
       "bathrooms": 1,
       "squareFeet": 700,
-      "price": "$1,750/mo",
+      "price": "$1,265/mo",
       "availability": 4,
-      "image": "/images/floor-plans/1b1b.jpg",
+      "image": "/images/eden/2-bed-1-bath.webp",
       "description": "Bright one-bedroom with floor-to-ceiling windows."
     },
     {
@@ -51,9 +56,9 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "squareFeet": 1050,
-      "price": "$2,400/mo",
+      "price": "$1,355/mo",
       "availability": 3,
-      "image": "/images/floor-plans/2b2b.jpg",
+      "image": "/images/eden/2-bed-2-bath.webp",
       "description": "Spacious two-bedroom with separate living areas."
     }
   ],
@@ -98,37 +103,44 @@
   "galleryImages": [
     {
       "id": "eden-1",
-      "title": "Rooftop Garden",
-      "description": "Peaceful rooftop garden with city views",
-      "image": "/images/gallery/rooftop.jpg",
-      "category": "exterior"
+      "title": "Modern Clubroom",
+      "description": "Modern clubhouse with premium amenities",
+      "image": "/images/eden/clubhouse.webp",
+      "category": "interior"
     },
     {
       "id": "eden-2",
       "title": "Modern Bedroom",
       "description": "Spacious bedroom with natural lighting",
-      "image": "/images/gallery/bedroom.jpg",
+      "image": "/images/eden/2-bed-2-bath.webp",
       "category": "interior"
     },
     {
       "id": "eden-3",
       "title": "Contemporary Kitchen",
       "description": "Sleek kitchen with premium appliances",
-      "image": "/images/gallery/kitchen.jpg",
+      "image": "/images/eden/2-bed-1-bath.webp",
       "category": "interior"
     },
     {
       "id": "eden-4",
-      "title": "Yoga Studio",
-      "description": "Tranquil wellness space for yoga and meditation",
-      "image": "/images/gallery/yoga-studio.jpg",
+      "title": "Fitness Center",
+      "description": "Premium fitness center",
+      "image": "/images/eden/fitness-center.webp",
       "category": "amenity"
     },
     {
       "id": "eden-5",
-      "title": "Community Lounge",
-      "description": "Social gathering space with modern design",
-      "image": "/images/gallery/lounge.jpg",
+      "title": "Jacuzzi Spas",
+      "description": "Year round jacuzzi spas",
+      "image": "/images/eden/hottub.webp",
+      "category": "amenity"
+    },
+     {
+      "id": "eden-6",
+      "title": "Game Room",
+      "description": "Game room with Foosball, Billiards, and Ping-Pong",
+      "image": "/images/eden/gameroom.webp",
       "category": "amenity"
     }
   ]

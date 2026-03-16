@@ -83,7 +83,7 @@ function AppRoutes() {
 function App() {
   return (
     <Router>
-      <PropertyProvider defaultProperty="mesa-falls">
+      <PropertyProvider>
         <AppRoutes />
       </PropertyProvider>
     </Router>

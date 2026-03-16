@@ -53,14 +53,30 @@ export default function Amenities() {
                 </ul>
               </div>
               <div className={`${styles.detailsImage} ${styles.imageBlue}`}>
-                <p>Recreation Image</p>
+                {propertyConfig.images.amenityDetailImages?.recreation ? (
+                  <img 
+                    src={propertyConfig.images.amenityDetailImages.recreation} 
+                    alt="Recreation & Wellness" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                ) : (
+                  <p>Recreation Image</p>
+                )}
               </div>
             </div>
 
             {/* Community */}
             <div className={styles.detailsRowReverse}>
               <div className={`${styles.detailsImage} ${styles.imagePurple}`}>
-                <p>Community Image</p>
+                {propertyConfig.images.amenityDetailImages?.community ? (
+                  <img 
+                    src={propertyConfig.images.amenityDetailImages.community} 
+                    alt="Community Spaces" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                ) : (
+                  <p>Community Image</p>
+                )}
               </div>
               <div className={styles.detailsContent}>
                 <h3>Community Spaces</h3>
@@ -92,7 +108,15 @@ export default function Amenities() {
                 </ul>
               </div>
               <div className={`${styles.detailsImage} ${styles.imageOrange}`}>
-                <p>Services Image</p>
+                {propertyConfig.images.amenityDetailImages?.services ? (
+                  <img 
+                    src={propertyConfig.images.amenityDetailImages.services} 
+                    alt="Convenience & Services" 
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                ) : (
+                  <p>Services Image</p>
+                )}
               </div>
             </div>
           </div>
