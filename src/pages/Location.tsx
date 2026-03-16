@@ -82,7 +82,7 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Nearby Attractions */}
+          {/* Nearby Attractions
           <div className={styles.attractionsSection}>
             <h2 className={styles.mapTitle}>Nearby Attractions</h2>
             <div className={styles.attractionGrid}>
@@ -96,7 +96,7 @@ export default function Location() {
                 </Card>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Office Hours */}
           <div className={styles.officeHoursBox}>
@@ -133,35 +133,9 @@ export default function Location() {
             </div>
           </div>
 
-          {/* Neighborhood Info */}
-          <div className={styles.neighborhoodBox}>
-            <h2 className={styles.neighborhoodTitle}>Our Neighborhood</h2>
-            <p className={styles.neighborhoodDescription}>
-              Mesa Falls Apartments is located in one of Phoenix's most vibrant and convenient neighborhoods. Our location offers the perfect balance of urban amenities and peaceful living. You'll find yourself minutes away from top-rated restaurants, shopping, entertainment, and employment centers.
-            </p>
-            <p className={styles.neighborhoodDescription}>
-              Whether you're looking for a quick walk to nearby parks, easy access to downtown cultural attractions, or quick commutes to business districts, Mesa Falls has it all.
-            </p>
-            <ul className={styles.neighborhoodFeatures}>
-              <li className={styles.neighborhoodFeatureItem}>
-                <span className={styles.checkmark}>✓</span>
-                <span>Vibrant downtown with restaurants and nightlife</span>
-              </li>
-              <li className={styles.neighborhoodFeatureItem}>
-                <span className={styles.checkmark}>✓</span>
-                <span>Multiple shopping centers within walking distance</span>
-              </li>
-              <li className={styles.neighborhoodFeatureItem}>
-                <span className={styles.checkmark}>✓</span>
-                <span>Access to top-rated schools</span>
-              </li>
-              <li className={styles.neighborhoodFeatureItem}>
-                <span className={styles.checkmark}>✓</span>
-                <span>Safe, well-maintained neighborhood</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+          /* Neighborhood Info
+          
+        </div> 
       </section>
 
       {/* CTA */}
