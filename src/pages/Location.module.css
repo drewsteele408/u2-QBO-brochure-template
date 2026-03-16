@@ -35,10 +35,8 @@
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .mapPlaceholder {

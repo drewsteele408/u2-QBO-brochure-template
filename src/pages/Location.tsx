@@ -58,14 +58,16 @@ export default function Location() {
           <div className={styles.mapSection}>
             <h2 className={styles.mapTitle}>Find Us on the Map</h2>
             <div className={styles.mapContainer}>
-              <div className={styles.mapPlaceholder}>
-                <p className={styles.mapPlaceholderText}>
-                  Interactive Map Coming Soon
-                </p>
-                <p className={styles.mapPlaceholderSubtext}>
-                  {propertyConfig.address}
-                </p>
-              </div>
+              <iframe
+                title="Property Location Map"
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(propertyConfig.address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                width="100%"
+                height="100%"
+                style={{ border: 0, borderRadius: '0.5rem' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
             <div className={styles.infoBox}>
               <h3 className={styles.infoBoxTitle}>Address</h3>
