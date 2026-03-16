@@ -196,6 +196,7 @@ textarea {
 .btn-primary:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+  color: #ffffff;
 }
 
 .btn-primary:active {

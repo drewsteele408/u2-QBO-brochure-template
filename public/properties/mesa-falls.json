@@ -18,7 +18,8 @@
       "amenityDetailImages": {
         "recreation": "/images/mesa-falls/hot-tub.webp",
         "community": "/images/mesa-falls/courtyard.webp",
-        "services": "/images/mesa-falls/kitchen.webp"
+        "services": "/images/mesa-falls/kitchen.webp",
+        "exterior": "/images/mesa-falls/courtyard.webp"
       }
     },
     "socialMedia": {

@@ -47,6 +47,7 @@ export interface PropertyConfig {
       recreation?: string;
       community?: string;
       services?: string;
+      exterior?: string;
     };
   };
   socialMedia?: {

@@ -18,7 +18,8 @@
       "amenityDetailImages": {
         "recreation": "/images/providence-square/gym.webp",
         "community": "/images/providence-square/clubhouse.webp",
-        "services": "/images/providence-square/patio.webp"
+        "services": "/images/providence-square/patio.webp",
+        "exterior": "/images/providence-square/patio.webp"
       }
     },
     "socialMedia": {

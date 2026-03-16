@@ -45,7 +45,15 @@ export default function Home() {
               </CTAButton>
             </div>
             <div className={styles.aboutImage}>
-              Community Overview
+              {propertyConfig.images.amenityDetailImages?.exterior ? (
+                <img 
+                  src={propertyConfig.images.amenityDetailImages.exterior} 
+                  alt={`${propertyConfig.name} Exterior`} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              ) : (
+                <p>Community Overview</p>
+              )}
             </div>
           </div>
         </div>

@@ -18,7 +18,8 @@
       "amenityDetailImages": {
         "recreation": "/images/eden/fitness-center.webp",
         "community": "/images/eden/clubhouse.webp",
-        "services": "/images/eden/gameroom.webp"
+        "services": "/images/eden/gameroom.webp",
+        "exterior": "/images/eden/exterior.webp"
       }
     },
     "socialMedia": {
