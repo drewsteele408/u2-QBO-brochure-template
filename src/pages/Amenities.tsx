@@ -133,11 +133,11 @@ export default function Amenities() {
           <div className={styles.petBox}>
             <h3 className={styles.petBoxTitle}>Pet Policy</h3>
             <ul className={styles.petList}>
-              <li>• Small pets welcome (dogs and cats)</li>
-              <li>• Weight/breed restrictions apply</li>
-              <li>• Pet parks available on-site</li>
-              <li>• Grooming facility partnerships</li>
-              <li>• Contact us for specific pet details</li>
+              <li>Small pets welcome (dogs and cats)</li>
+              <li>Weight/breed restrictions apply</li>
+              <li>Pet parks available on-site</li>
+              <li>Grooming facility partnerships</li>
+              <li>Contact us for specific pet details</li>
             </ul>
           </div>
         </div>
