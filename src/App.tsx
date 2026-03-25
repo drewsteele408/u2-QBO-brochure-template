@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import { PropertyProvider, useProperty } from './context/PropertyContext';
+import { UserPreferencesProvider } from './context/UserPreferencesContext';
 import { isValidPropertyId } from './services/propertyLoader';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -82,11 +83,13 @@ function AppRoutes() {
 
 function App() {
   return (
-    <Router>
-      <PropertyProvider>
-        <AppRoutes />
-      </PropertyProvider>
-    </Router>
+    <UserPreferencesProvider apiBaseUrl={import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'}>
+      <Router>
+        <PropertyProvider>
+          <AppRoutes />
+        </PropertyProvider>
+      </Router>
+    </UserPreferencesProvider>
   );
 }
 

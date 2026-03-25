@@ -1,5 +1,6 @@
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { usePropertyConfig } from '../context/PropertyContext';
+import DarkModeToggle from './DarkModeToggle';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -87,6 +88,8 @@ export default function Header() {
         >
           Apply Now
         </a>
+
+        <DarkModeToggle />
       </nav>
     </header>
   );

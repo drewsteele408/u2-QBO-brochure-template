@@ -401,5 +401,79 @@ footer h3, footer h4 {
   color: var(--white);
 }
 
+/* ===== LIGHT MODE (Header & Footer Only) ===== */
+/* Header Light Mode Styles */
+html.dark header {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(34, 197, 94, 0.15);
+}
 
+html.dark header a {
+  color: #6b7280;
+}
 
+html.dark header a:hover {
+  color: #22c55e;
+}
+
+html.dark header a.active {
+  color: #16a34a;
+}
+
+/* Toggle Button Light Mode */
+html.dark header svg {
+  color: #000000;
+  stroke: #000000;
+}
+
+html.dark header button svg {
+  color: #000000;
+  stroke: #000000;
+}
+
+/* Button Styles (Keep same in light mode) */
+html.dark .btn-primary {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: #000000;
+}
+
+html.dark .btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.4);
+  color: #ffffff;
+}
+
+html.dark footer {
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 50%, #e5e7eb 100%);
+  color: #1f2937;
+}
+
+html.dark footer p {
+  color: #4b5563;
+}
+
+html.dark footer .tagline {
+  color: #4b5563;
+}
+
+html.dark footer .subheading {
+  color: #111827;
+}
+
+html.dark footer ul li {
+  color: #4b5563;
+}
+
+html.dark footer a {
+  color: #16a34a;
+}
+
+html.dark footer a:hover {
+  color: var(--accent);
+}
+
+html.dark footer h3, 
+html.dark footer h4 {
+  color: #111827;
+}

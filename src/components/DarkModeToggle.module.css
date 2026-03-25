@@ -1,0 +1,32 @@
+.toggleButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.toggleButton:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toggleButton:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.toggleButton:hover .icon {
+  transform: rotate(20deg);
+}

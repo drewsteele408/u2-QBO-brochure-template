@@ -9,44 +9,6 @@ export default function Location() {
   const { propertyId } = useParams<{ propertyId: string }>();
   const propertyConfig = usePropertyConfig();
   const basePath = propertyId ? `/${propertyId}` : '/';
-  const nearbyAttractions = [
-    {
-      id: '1',
-      name: 'Downtown Phoenix',
-      distance: '2 miles',
-      description: 'Shopping, dining, and entertainment district',
-    },
-    {
-      id: '2',
-      name: 'Phoenix Parks',
-      distance: '0.5 miles',
-      description: 'Beautiful parks and recreational areas',
-    },
-    {
-      id: '3',
-      name: 'Desert Sky Mall',
-      distance: '1 mile',
-      description: 'Premier shopping and retail center',
-    },
-    {
-      id: '4',
-      name: 'Hiking Trails',
-      distance: '3 miles',
-      description: 'Scenic desert hiking and outdoor activities',
-    },
-    {
-      id: '5',
-      name: 'Phoenix Airport',
-      distance: '8 miles',
-      description: 'Easy access to travel',
-    },
-    {
-      id: '6',
-      name: 'Business District',
-      distance: '1.5 miles',
-      description: 'Major employment and business centers',
-    },
-  ];
 
   return (
     <div className={styles.container}>
